@@ -3,7 +3,7 @@ import AddIcon from '@mui/icons-material/Add';
 import { useState } from "react";
 
 export default function CustomerService(){
-    const [checked, setChecked] = useState([true, false]);
+    const [checked, setChecked] = useState([false, false]);
     const [collapse1,setCollapse1]=useState<boolean>(false)
 
     const handleCollapse1=()=>{
@@ -12,10 +12,6 @@ export default function CustomerService(){
 
     const handleChangeParent1= (event: React.ChangeEvent<HTMLInputElement>) => {
         setChecked([event.target.checked, event.target.checked]);
-        console.log(checked)
-        console.log("checked parent")
-        console.log(checked[0])
-        console.log(checked[1])
       };
     
       const parent1Child1 = (event: React.ChangeEvent<HTMLInputElement>) => {
