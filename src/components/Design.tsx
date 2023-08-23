@@ -5,7 +5,7 @@ import AddIcon from '@mui/icons-material/Add';
 
 export default function Design(){
     
-    const [checked2, setChecked2] = useState([true, false,false]);
+    const [checked2, setChecked2] = useState([false, false,false]);
     const [collapse2,setCollapse2]=useState<boolean>(false)
 
     const handleCollapse2=()=>{
@@ -15,11 +15,7 @@ export default function Design(){
 
     const handleChangeParent2= (event: React.ChangeEvent<HTMLInputElement>) => {
         setChecked2([event.target.checked, event.target.checked,event.target.checked]);
-        console.log(checked2)
-        console.log("checked parent")
-        console.log(checked2[0])
-        console.log(checked2[1])
-        console.log(checked2[2])
+
         };
     
     const parent2Child1 = (event: React.ChangeEvent<HTMLInputElement>) => {
